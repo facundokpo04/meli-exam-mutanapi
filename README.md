@@ -203,13 +203,10 @@ Prueba Local
  
 
 
-    **Body (no mutante):** {"dna":["ACGTTA","CATGTA","TGTACT","GTACGT","AXGTTA","CATGTA"]}
+    **Body (no mutante): {"dna":["ACGTTA","CATGTA","TGTACT","GTACGT","AGGTTA","CATGTA"]}
 
 
-    **Body (mutante):**
-
-
-    {"dna":["ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"]}
+    **Body (mutante): {"dna":["ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"]}
 
 
      
@@ -223,18 +220,12 @@ POST:[ https://mutanapi-proyect.wl.r.appspot.com/mutant](https://mutanapi-proyec
  
 
 
-    **Body (no mutante):** {"dna":["ACGTTA","CATGTA","TGTACT","GTACGT","AXGTTA","CATGTA"]}
+    **Body (no mutante): {"dna":["ACGTTA","CATGTA","TGTACT","GTACGT","AGGTTA","CATGTA"]}
 
 
-    **Body (mutante):**
-
-
-    {"dna":["ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"]}
+    **Body (mutante): {"dna":["ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"]}
 
  
-
-
-     
 
 
 
