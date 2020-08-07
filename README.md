@@ -133,15 +133,11 @@ El proyecto se encuentre en un repositorio público de GitHub:
 
 Crear y configurar una base de datos PostgresSql con los siguentes datos
 
-
         ·  	Direccion: localhost:5432
-
 
         ·  	Nombre de BD: dna
 
-
         ·  	Usuario:postgres
-
 
         ·  	Contrasena: postgres
 
@@ -367,7 +363,9 @@ El escalado de instancias responde bien escalando automáticamente a medida que 
  Tasa 353.7/seg
 
 
-
+*********
+![alt text](https://github.com/facundokpo04/meli-exam-mutanapi/blob/master/Test%20Jmeter.png "Test jMeter")
+*********
 
 
 
