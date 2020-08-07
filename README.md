@@ -114,10 +114,6 @@ Entorno
 
 
         ·  	PostMan
-
-
-        ·  	 
-
  
 
 
@@ -139,7 +135,7 @@ Crear y configurar una base de datos PostgresSql con los siguentes datos
 
         ·  	Usuario:postgres
 
-        ·  	Contrasena: postgres
+        ·   Contrasena: postgres
 
 Los valores puede ser modificados desde el archivo aplication.properties
 
@@ -307,17 +303,26 @@ Entorno Cloud
 
 Para el container de la app se configuró una estrategia de auto escalado automático.
 
-Teniendo en cuenta que la fluctuación de peticiones haría que se creen mas instancias automáticas para responder.
+Teniendo en cuenta  cantidad de peticiones y otros parametro, hara que se creen mas instancias automáticas para responder .
 
-Instancias Minimas 2
+Instancias Minimas 10
 
 Instancias Maximas 100.
 
-La aplicación podría escalar horizontalmente sin muchos cambios ya que cambiamos la configuracion para aumentar las instancias.
 
+
+La aplicación podría escalar horizontalmente sin muchos cambios ya que podriamos cambiar la configuracion para aumentar las instancias.
+#Parametros de escalado automatico
+
+  target_cpu_utilization: 0.65
+  min_instances: 10
+  max_instances: 100
+  min_pending_latency: 30ms
+  max_pending_latency: automatic
+  max_concurrent_requests: 50
  
 
-La aplicación puede escalar verticalmente hasta recursos con 6 hilos ya que tiene 5 procesos asíncronos :
+La aplicación puede escalar verticalmente hasta procesadores con 6 hilos ya que tiene 5 procesos asíncronos :
 
 
         ·  	Guardar en la base de datos
@@ -354,7 +359,7 @@ Se usó jMeter para prueba de estrés, se crearon 4 threadgroup para verificar e
 
         4-	1000  peticiones por segundo durante 10 ciclos
 
-El escalado de instancias responde bien escalando automáticamente a medida que aumenta las peticiones, a pesar que en algunos casos no responde los primeros segundos hasta que logra escalar a las instancias necesarias.
+El escalado de instancias responde bien, escalando automáticamente a medida que aumenta las peticiones a pesar que en algunos casos no responde los primeros segundos hasta que logra escalar a las instancias necesarias.
 
  
 
