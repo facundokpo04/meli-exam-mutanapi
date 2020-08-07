@@ -44,8 +44,7 @@ public class UtilsDna {
   
 
     public int countMachtVertical(char[][] matrix) {
-        String result;
-        int count = 0;
+       String result;
         int countmacht = 0;
         boolean stop = false;
         for (int columna = 0; columna < matrix.length && !stop; columna++) {
@@ -53,7 +52,8 @@ public class UtilsDna {
             for (int fila = 0; fila < matrix.length; fila++) {
                 result += matrix[fila][columna];
             }
-            countmacht += countMatcherDna(result, countmacht);
+            countmacht = countMatcherDna(result, countmacht);
+            stop = countmacht > 1;
 
         }
         return countmacht;
